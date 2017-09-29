@@ -16,7 +16,7 @@ end
 And second you need to add it to the list of `Ravenx` strategies in the config in order for it to work:
 ```elixir
 config :ravenx, :strategies, [
-  pusher: RavenxTelegram
+  telegram: RavenxTelegram
 ]
 ```
 
