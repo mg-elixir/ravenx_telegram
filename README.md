@@ -22,11 +22,13 @@ config :ravenx, :strategies, [
 
 This module uses [Nadia](https://github.com/zhyu/nadia), so add into your app:
 ```elixir
+# You can get your token from @BotFather bot in Telegram.
 config :nadia,
   token: "YOUR_BOT_TOKEN"
 ```
 
 Send messages via `Ravenx`:
 ```elixir
+# You should create public channel in Telegram and add your bot to Admin users, when get public channel name from channel settings (or set it)   
 iex> Ravenx.dispatch(:telegram, %{channel_id: "@ravenx_test", text: "Test message"}
 ```
