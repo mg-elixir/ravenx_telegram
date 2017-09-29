@@ -59,14 +59,12 @@ defmodule RavenxTelegram.Mixfile do
     [
      {:ravenx, "~> 1.0.0"}, 
      {:nadia, "~> 0.4.2"},
-     {:plug, "~> 1.0"},
       
      # Docs
      {:ex_doc, "~> 0.16", only: :dev, runtime: false},
      {:earmark, ">= 1.2.3", only: :dev, runtime: false},
 
      # Testing
-     {:bypass, "~> 0.8", only: [:dev, :test]},
      {:credo, "~> 0.8", only: [:dev, :test], runtime: false},
     ]
   end
