@@ -26,7 +26,7 @@ defmodule RavenxTelegram.Mixfile do
       source_ref: "v#{@version}",
       canonical: "http://hexdocs.pm/ravenx_telegram",
       main: "RavenxTelegram",
-      source_url: "https://github.com/maratgaliev/ravenx-telegram",
+      source_url: "https://github.com/maratgaliev/ravenx_telegram",
       extras: ["README.md"]
     ]
   end
@@ -43,7 +43,7 @@ defmodule RavenxTelegram.Mixfile do
      files: ["lib", "mix.exs", "README*", "LICENSE*"],
      maintainers: ["Marat Galiev"],
      licenses: ["MIT"],
-     links: %{"GitHub" => "https://github.com/maratgaliev/ravenx-telegram"}
+     links: %{"GitHub" => "https://github.com/maratgaliev/ravenx_telegram"}
     ]
   end
 
@@ -57,7 +57,7 @@ defmodule RavenxTelegram.Mixfile do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-     {:ravenx, "~> 1.0.0"}, 
+     {:ravenx, "~> 1.0 or ~> 2.0"}, 
      {:nadia, "~> 0.4.2"},
       
      # Docs
